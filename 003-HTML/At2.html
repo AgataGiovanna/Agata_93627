@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <style>
+        /* Quando o checkbox estiver marcado, risca o texto ao lado */
+        input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+            color: rgb(154, 191, 202);
+        }
+    </style>
+</head>
+<body>
+    <h1>Minhas Tarefas</h1>
+
+    <form>
+        <label for="nova">Digite uma nova tarefa:</label><br>
+        <input type="text" id="nova" name="nova"><br><br>
+        <input type="submit" value="Adicionar Tarefa">
+    </form>
+
+    <h2>Lista</h2>
+    <ol>
+        <li>
+            <input type="checkbox" id="t1">
+            <label for="t1">Comer</label>
+        </li>
+        <li>
+            <input type="checkbox" id="t2">
+            <label for="t2">Fazer atividade</label>
+        </li>
+    </ol>
+</body>
+</html>
