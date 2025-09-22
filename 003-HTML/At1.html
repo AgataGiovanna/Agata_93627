@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuário</title>
+</head>
+<body>
+    <h1>Perfil de Usuário</h1>
+    <p>Bem-vindo(a) ao perfil de Tata</p>
+
+    <div>
+        <h2>Foto do Usuário</h2>
+        <img src="img/usuario.jpg" width="150px" height="150px" alt="Imagem do Usuario"> <!--width="380px" height="220px"-->
+    </div><br>
+
+    <div>
+        <h3>Informações Básicas</h3>
+        <form>
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" name="nome" value="Tata" disabled><br><br>
+
+            <label for="email">E-mail: </label>
+            <input type="email" id="email" name="email" value="tata@gmail.com" disabled><br><br>
+
+            <label for="data-nascimento">Data de Nascimento: </label>
+            <input type="date" id="data-nascimento" name="data-nascimento" value="2005-12-03" disabled><br><br>
+
+            <label for="cidade">Cidade: </label>
+            <input type="text" id="cidade" name="cidade" value="Feira de Santana" disabled><br><br>
+        </form>
+    </div><br>
+
+    <div>
+        <h3>Interesses</h3>
+        <ul>
+            <li>Tecnologia</li>
+            <li>Música</li>
+            <li>Viagens</li>
+        </ul>
+    </div><br>
+
+    <div>
+        <button onclick="alert('Redirecionando para edição...')">Editar Perfil</button>
+    </div>
+</body>
+</html>
