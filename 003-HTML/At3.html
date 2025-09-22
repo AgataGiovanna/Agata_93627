@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição para o Evento</title>
+</head>
+<body>
+    <h1>Inscrição para o Evento</h1>
+    <p align="justify">Participe do nosso Evento de Tecnologia e descubra as tendências que estão transformando o futuro digital. Em um único dia, você terá acesso a palestras inspiradoras, demonstrações de inovações e oportunidades de networking com profissionais e empresas de destaque. Garanta sua inscrição para ampliar seus conhecimentos, trocar experiências e impulsionar sua carreira no universo da tecnologia.</p>
+
+    <h1>Cadastro de Usuário</h1>
+    <form action="/submit" method="post">
+        <label for="nome">Nome Completo: </label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for ="email">E-mail: </label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for ="numero-telefone">Múmero de Telefone: </label>
+        <input type="text" id="contato" name="contato" required><br><br>
+
+    
+        <label for ="genero">Gênero: </label>
+        <input type="radio" id="masculino" name="genero" value="masculino" >
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="feminino" name="genero" value="feminino" >
+        <label for="feminino">Feminino</label> <br> <br>
+        <input type="radio" id="outro" name="genero" value="Outro" >
+        <label for="outro">Outro</label> <br> <br>
+
+        <label for="interesses">Interesses: </label><br> 
+        <input type="checkbox" id="Palestras" name="interesses" value="Palestras">
+        <label for="Palestras">Palestras</label><br> 
+        <input type="checkbox" id="Workshops" name="interesses" value="Workshops">
+        <label for="Workshops">Workshops</label><br>
+        <input type="checkbox" id="Networking" name="interesses" value="Networking">
+        <label for="Networking">Networking</label><br><br>
+
+        <label for ="data-participação">Data de Participação: </label>
+        <input type="date" id="data" name="data" required><br><br>
+
+
+        <input type="submit" value="Enviar Inscrição">
+
+        
+</body>
+</html>
