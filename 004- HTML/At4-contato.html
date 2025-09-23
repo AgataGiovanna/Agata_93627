@@ -1,38 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8">
-  <title>Contato - Site Fictício</title>
+    <meta charset="UTF-8">
+    <title>Cafeteria - Contato</title>
 </head>
 <body>
-  <header>
-    <h1>Meu Site Fictício</h1>
-    <nav>
-      <a href="At4-home.html">Início</a> |
-      <a href="At4-contato.html">Contato</a>
-    </nav>
-  </header>
 
-  <main>
-    <h2>Fale Conosco</h2>
-    <p>Você está na página de contato.</p>
+    <header>
+        <h1>LOGO</h1>
+        <nav>
+            <a href="At4-home.html">Início</a> |
+            <a href="cardapio.html">Cardápio</a> |
+            <a href="sobre.html">Sobre Nós</a> |
+            <a href="At4-contato.html">Contato</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Entre em Contato Conosco</h2>
+        <form action="#" method="post">
+            <p>
+                <label>Nome:<br>
+                <input type="text" name="nome" required></label>
+            </p>
+            <p>
+                <label>Email:<br>
+                <input type="email" name="email" required></label>
+            </p>
+            <p>
+                <label>Mensagem:<br>
+                <textarea name="mensagem" rows="5" required></textarea></label>
+            </p>
+            <p>
+                <button type="submit">Enviar</button>
+            </p>
+        </form>
+    </main>
 
-    <form>
-      <label for="nome">Nome:</label><br>
-      <input id="nome" name="nome" type="text"><br><br>
 
-      <label for="email">E-mail:</label><br>
-      <input id="email" name="email" type="email"><br><br>
-
-      <label for="mensagem">Mensagem:</label><br>
-      <textarea id="mensagem" name="mensagem"></textarea><br><br>
-
-      <input type="submit" value="Enviar">
-    </form>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Meu Site Fictício</p>
-  </footer>
+    <footer>
+        <p>Telefone | Endereço | Redes Sociais</p>
+    </footer>
 </body>
 </html>
