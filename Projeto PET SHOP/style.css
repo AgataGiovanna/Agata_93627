@@ -1,6 +1,18 @@
+/* NAVBAR */
 nav {
     background-color: rgb(238, 186, 14);
     border-bottom: 3px solid rgb(238, 130, 7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+nav img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
 }
 
 ul {
@@ -12,7 +24,7 @@ ul {
 
 li {
     list-style: none;
-    margin: 0 30px; 
+    margin: 0 20px; 
 }
 
 a {
@@ -20,24 +32,183 @@ a {
     color: black;
     font-weight: bold;
     font-size: 12pt;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 15px 10px;
-    display: inline-block;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+    padding: 10px 15px;
+    transition: 0.3s;
 }
 
 a:hover {
     color: rgb(238, 130, 7);
     background-color: azure;
-    border: 5px;
+    border-radius: 5px;
 }
 
-img{
-    /*Largura*/
-    width: 250px;
-    /*Altura*/
-    height: 250px;
+/* BANNER */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url("img/logo.jpg") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 100px;
+}
 
-    padding-left: 850px;
-    padding-top: 30px;
+.texto-banner h1 {
+    color: white;
+    font-size: 45px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+    margin-bottom: 200px;
+}
+
+.texto-banner p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+
+/*SOBRENÓS*/
+.sobre-nos{
+    padding: 60px 220px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.sobre-nos h2{
+    font-size: 32px;
+    color: rgb(238, 130, 7);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sobre-nos p{
+    max-width: 700px;
+    margin: 0 auto 30px auto;
+    font-size: 18px;
+    line-height: 1,6;
+    color: #5e5858;
+
+}
+
+.botao {
+    display: inline-block;
+    background: rgb(238, 130, 7);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background: rgb(238, 130, 7);
+    color: #333;
+}
+
+/* FOOTER */
+footer {
+    background-color: rgb(238, 186, 14); 
+    border-top: 3px solid rgb(238, 130, 7);
+    text-align: center;
+    padding: 20px 10px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 14px;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+footer a {
+    color: rgb(238, 130, 7);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*FORMULÁRIO*/
+.contato {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  margin: 40px auto; 
+}
+
+.contato h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color:rgb(238, 130, 7);
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #f39c12;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #e67e22;
+}
+
+.whatsapp a {
+    display: inline-flex;      
+    align-items: center;       
+    gap: 10px;                
+    padding: 10px 20px;        
+    background-color: rgb(97, 158, 79);
+    border-radius: 6px;        
+    color: #fff;                
+    font-weight: bold;
+    text-decoration: none;      
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+   
+}
+
+.whatsapp a:hover {
+    background-color: rgb(76, 122, 62);
+}
+
+.whatsapp img {
+    width: 25px;
+    height: auto;
+    vertical-align: middle;
     
 }
