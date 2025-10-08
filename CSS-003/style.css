@@ -1,0 +1,49 @@
+.pai{
+    background-color: aqua;
+    width: 420px;
+    height: 420px;
+    align-items: center;
+    margin: 20px 0;
+
+}
+
+.f1{
+    background-color: blue;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    /*
+    4 possibilidades
+    direita
+    esquerda
+    encima
+    embaixo
+    left: 120px;
+    top:50px;
+    bottom: 90px;
+    right: 120px;*/
+}
+
+
+.f2{
+    background-color: blue;
+    width: 120px;
+    height: 120px;
+    position: sticky;
+    left: 2px;
+    bottom:  120px;
+}
+
+/*Position: para criar o layout
+Relative 
+absolute
+fixed
+sticky
+static*/
+
+p{
+
+    margin-left: 80px;
+    height: 100200px;
+    padding-top: 50px;
+}
