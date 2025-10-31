@@ -169,3 +169,21 @@ footer p {
   margin: 0;
 }
 
+/* Efeito de aparecer quando entra na tela */
+.sobre img, .destaques img {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.sobre img.visivel, .destaques img.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 🔍 Efeito de zoom quando o mouse passa por cima */
+.sobre img:hover, .destaques img:hover {
+  transform: scale(1.08);
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
